@@ -44,35 +44,40 @@
             
             <li>
               <label id="f-name-label">First Name</label>
-              <input type="text" name="first-name" id="f-name-label" placeholder="First Name" required/>
+              <input type="text" name="first-name" placeholder="First Name" required/>
             </li>
               
             <li>
               <label id="l-name-label">Last Name</label>
-              <input type="text" name="first-name" id="l-name-label" placeholder="Last Name" required/>
+              <input type="text" name="lirst-name" placeholder="Last Name" required/>
             </li>
              
-            <li>
-              <label>Date Of Birth</label>
-              <input type="number" name="birth-year" min="1900" max="2016"
-              select name="year">
-            </li>
-            
-            <li>
-              <label id="username">Username:</label>
-              <input type="text" name="username"><br>
-            </li>
-            
-            <li>
-              <label id="password">Password:</label>
-              <input type="password" name="password">
-            </li>
-            
             <li>
               <label>Please Enter a Valid Email</label>
               <input type="email" name="email" required/>
             </li>
             
+            <li>
+              <label>Phone Number</label>
+              <input type="tel" name="phonenumber">
+            </li>
+             
+            <li>
+              <label>Date Of Birth</label>
+              <input type="number" name="birth-year" min="1900" max="2016"
+              select="year">
+            </li>
+            
+            <li>
+              <label id="username">Username (six or more characters):</label>
+              <input type="text" name="username" pattern=".{6,}" title="six or more characters"><br>
+            </li>
+            
+            <li>
+              <label id="password">Password (six or more characters):</label>
+              <input type="password" name="password" pattern=".{6,}" title="six or more characters">
+            </li>
+           
             <li>
               <label>Preferred Shooting Style (check all that apply)</label><br><br>
               <input type="checkbox" name="style1" value="portraits"> Portraits<br>
@@ -92,18 +97,28 @@
               <input type="checkbox" name="style16" value="underwater"> Under Water<br>
               <input type="checkbox" name="style17" value="travel"> Travel<br>
               <input type="checkbox" name="style18" value="wedding"> Wedding<br>
-              <input type="checkbox" name="style19" value="wildlife"> Wildlife<br>
+              <input type="checkbox" name="style19" value="wildlife"> Wildlife<br><br>
             </li>
             
             <li>
-              <label>I'm Interested In Shooting With a Partner</label>
-              
+              <label>Skill Level</label><br><br>
+              Beginner
+              <input type="range" name="skill" min="0" max="10">
+              Expert
+              <br><br>
+            </li>
             
+            <li>
+              <label>I'm Interested In Shooting With a Partner</label><br><br>
+              <input type="radio" name="partner" value="yes" checked> Yes<br>
+              <input type="radio" name="partner" value="no"> No<br>
+              <input type="radio" name="partner" value="maybe"> Maybe<br><br>
             </li>
             
             <li>
               <label>Your Neighborhood</label>
-              <input type="number" placeholder="90210" pattern="" required />            
+              <input type="text" placeholder="Montecito" required />
+              <br><br>
             </li>
             
           </ul>
@@ -118,7 +133,8 @@
             
             	
 
-        </div><!-- closing maincContent div tag -->
+    </div>
+    <!-- closing maincContent div tag -->
 		
 		
         <!--  This is the footer section, only footer stuff -->
